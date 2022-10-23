@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+
+        @media (max-width:600px) {
+            header{
+                flex-direction: column;
+            }
+        }
+      body {
+        font-family: sans-serif;
+        margin: 0%;
+      }
+      .contenedor {
+        background-color: rgb(39, 39, 61);
+        height: 750px;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbar {
+        background-color: white;
+        display: flex;
+        height: 70px;
+        padding: 10px;
+        /* flex-direction: column;*/
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        margin-left: 100px;
+      }
+
+      .logo img{
+        height: 50px;
+      }
+      
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      nav a{
+        font-weight: 600;
+        padding-right: 100px; 
+      }
+
+      nav a:hover{
+        color:aqua
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">
+        <img src="/goit-markup-hw-01/images/logo.png" alt="Logo de la compañia" />
+      </a>
+      <nav>
+        <a href="" class="nav-link">Estudio</a>
+        <a href="" class="nav-link">Portafolio</a>
+        <a href="" class="nav-link">Contactos</a>
+      </nav>
+      <nav>
+        <a href="" class="nav-link">Developerstevenmarin@gmail.com</a>
+        <a href="" class="nav-link">+57 300 350 3134</a>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+     
+    </div>
+  </body>
+</html>
