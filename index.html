@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+        }
+      }
+      body {
+        font-family: sans-serif;
+        margin: 0%;
+      }
+      .contenedor {
+        background-color: rgba(47, 48, 58, 1);
+        height: 600px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      .navbar {
+        background-color: white;
+        display: flex;
+        height: 70px;
+        padding: 10px;
+        /* flex-direction: column;*/
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        margin-left: 100px;
+      }
+      .nombre-pagina {
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 2218px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        /* identical to box height */
+
+        letter-spacing: 0.03em;
+
+        color: rgba(33, 150, 243, 1);
+      }
+
+      .logo img {
+        height: 50px;
+      }
+      .titulo-article {
+        font-size: 44px;
+        width: 696px;
+        height: 120px;
+        font-family: "roboto";
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      .boton-solicitar-servicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        position: absolute;
+        border: none;
+        width: 261px;
+        height: 50px;
+        color: white;
+        background: rgba(33, 150, 243, 1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: "roboto";
+      }
+      .nav-link {
+        font-family: "roboto";
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      nav a {
+        font-weight: 600;
+        padding-right: 100px;
+      }
+
+      nav a:hover {
+        color: rgba(33, 150, 243, 1);
+      }
+      footer {
+        background-color: rgba(47, 48, 58, 1);
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      address {
+        width: 231px;
+        margin-left: 100px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: white;
+
+        letter-spacing: 0.03em;
+      }
+      .contenedor-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+      }
+      .titulo-contenedor-main {
+        width: 270px;
+        height: 16px;
+        left: 215px;
+        top: 775px;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #212121;
+      }
+      .texto-contenedor-main {
+        width: 270px;
+        height: 75px;
+        left: 215px;
+        top: 801px;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        letter-spacing: 0.03em;
+
+        color: #757575;
+      }
+      .titulo-dedicarnos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+      }
+      .imagenes-contenedor-dedicarnos {
+        margin-right: 50px;
+      }
+      .img-equipo {
+        height: 260px;
+      }
+      .section-equipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .team-card{
+        box-shadow: 1px 2px 5px 1px #d0d0d0;
+        border-radius: 5px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+      }
+      .team-name {
+        font-family: "Roboto";
+        font-weight: bold;
+
+        display: block;
+
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+      }
+      .team-job {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #757575;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">
+        <p class="nombre-pagina">WebStudio</p>
+      </a>
+      <nav>
+        <a href="" class="nav-link">Estudio</a>
+        <a href="" class="nav-link">Portafolio</a>
+        <a href="" class="nav-link">Contactos</a>
+      </nav>
+      <nav>
+        <a href="" class="nav-link">info@devstudio.com</a>
+        <a href="" class="nav-link">+52 55 5529 6000</a>
+      </nav>
+    </header>
+    <main>
+      <article class="contenedor">
+        <h1 class="titulo-article">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="boton-solicitar-servicio">
+          Solicite nuestro servicio
+        </button>
+      </article>
+      <article class="contenedor-main">
+        <section>
+          <p class="titulo-contenedor-main">ATENCIÓN A LOS DETALLES</p>
+          <p class="texto-contenedor-main">
+            Nos adentramos en todos los detalles y procesos de su negocio, para
+            así desarrollar una solución a su medida.
+          </p>
+        </section>
+        <section>
+          <p class="titulo-contenedor-main">PUNTUALIDAD</p>
+          <p class="texto-contenedor-main">
+            Con nosotros, usted puede sentirse seguro y protegido. Un principio
+            importante de la empresa: respetar su tiempo y respetar los plazos
+            acordados.
+          </p>
+        </section>
+        <section>
+          <p class="titulo-contenedor-main">PLANIFICACIÓN</p>
+          <p class="texto-contenedor-main">
+            Usted podrá observar y participar en cada fase del desarrollo y
+            aplicación de soluciones.
+          </p>
+        </section>
+        <section>
+          <p class="titulo-contenedor-main">TEGNOLOGÍA MODERNA</p>
+          <p class="texto-contenedor-main">
+            Usamos herramientas innovadoras para resolver las tareas asignadas.
+            Es hora de simplificar los procesos laborales.
+          </p>
+        </section>
+      </article>
+      <h2 class="titulo-dedicarnos">A qué nos dedicamos</h2>
+      <article class="contenedor-main">
+        <section class="imagenes-contenedor-dedicarnos">
+          <img
+            src="images/imagen.png"
+            alt="primer imagen sobre a que nos dedicamos"
+          />
+        </section>
+        <section class="imagenes-contenedor-dedicarnos">
+          <img
+            src="images/imagen2.png"
+            alt="segunda imagen sobre a que nos dedicamos"
+          />
+        </section>
+        <section>
+          <img
+            src="images/imagen3.png"
+            alt="tercera imagen sobre a que nos dedicamos"
+          />
+        </section>
+      </article>
+      <h2 class="titulo-dedicarnos">Nuestro Equipo</h2>
+      <article class="contenedor-main">
+        <section class="team-card">
+          <img class="img-equipo" src="images/equipo.png" alt="" />
+          <section class="section-equipo">
+            <p class="team-name">Andrés Cubo</p>
+            <p class="team-job">Diseñador de Productos</p>
+          </section>
+        </section>
+        <section  class="team-card">
+          <img class="img-equipo" src="images/equipo1.png" alt="" />
+          <section class="section-equipo">
+            <p class="team-name">Carla Palacios</p>
+            <p class="team-job">Desarrolladora Frontend</p>
+          </section>
+        </section>
+        <section class="team-card">
+          <img class="img-equipo" src="images/equipo2.png" alt="" />
+          <section class="section-equipo">
+            <p class="team-name">Mario Dorado</p>
+            <p class="team-job">Marketing</p>
+          </section>
+        </section>
+        <section class="team-card">
+          <img class="img-equipo" src="images/equipo3.png" alt="" />
+          <section class="section-equipo">
+            <p class="team-name">Pablo Mijangos</p>
+            <p class="team-job">Diseñador IU</p>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <article>
+        <a href="#" class="logo">
+          <p class="nombre-pagina">WebStudio</p>
+        </a>
+        <address>
+          <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+          <p style="color: rgba(255, 255, 255, 0.6)">+52 55 5529 6000</p>
+          <p style="color: rgba(255, 255, 255, 0.6)">info@example.com</p>
+        </address>
+      </article>
+    </footer>
+  </body>
+</html>
