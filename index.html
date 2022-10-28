@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>WebStudio</title>
@@ -8,26 +16,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <style>
-
-        @media (max-width:600px) {
-            header{
-                flex-direction: column;
-            }
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
         }
+      }
       body {
         font-family: sans-serif;
         margin: 0%;
       }
       .contenedor {
-        background-color: rgb(39, 39, 61);
-        height: 750px;
+        background-color: rgba(47, 48, 58, 1);
+        height: 600px;
         color: white;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       }
+
       .navbar {
         background-color: white;
         display: flex;
@@ -41,30 +49,90 @@
         display: flex;
         margin-left: 100px;
       }
+      .nombre-pagina {
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 2218px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        /* identical to box height */
 
-      .logo img{
+        letter-spacing: 0.03em;
+
+        color: rgba(33, 150, 243, 1);
+      }
+
+      .logo img {
         height: 50px;
       }
-      
-      a{
+      .titulo-article {
+        font-size: 44px;
+        width: 696px;
+        height: 120px;
+        font-family: "roboto";
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      .boton-solicitar-servicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        position: absolute;
+        border: none;
+        width: 261px;
+        height: 50px;
+        color: white;
+        background: rgba(33, 150, 243, 1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: "roboto";
+      }
+      .nav-link {
+        font-family: "roboto";
+      }
+      a {
         text-decoration: none;
         color: black;
       }
-      nav a{
+      nav a {
         font-weight: 600;
-        padding-right: 100px; 
+        padding-right: 100px;
       }
 
-      nav a:hover{
-        color:aqua
+      nav a:hover {
+        color: rgba(33, 150, 243, 1);
       }
+      footer {
+        background-color: rgba(47, 48, 58, 1);
+      }
+      address {
+        width: 231px;
+        margin-left: 100px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: white;
 
+          letter-spacing: 0.03em;
+      }
     </style>
   </head>
   <body>
     <header class="navbar">
       <a href="#" class="logo">
-        <img src="/goit-markup-hw-01/images/logo.png" alt="Logo de la compañia" />
+        <p class="nombre-pagina">WebStudio</p>
       </a>
       <nav>
         <a href="" class="nav-link">Estudio</a>
@@ -72,13 +140,38 @@
         <a href="" class="nav-link">Contactos</a>
       </nav>
       <nav>
-        <a href="" class="nav-link">Developerstevenmarin@gmail.com</a>
-        <a href="" class="nav-link">+57 300 350 3134</a>
+        <a href="" class="nav-link">info@devstudio.com</a>
+        <a href="" class="nav-link">+52 55 5529 6000</a>
       </nav>
     </header>
-    <div class="contenedor">
-      <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-     
-    </div>
+    <main>
+      <article class="contenedor">
+        <h1 class="titulo-article">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="boton-solicitar-servicio">
+          Solicite nuestro servicio
+        </button>
+      </article>
+      <article>
+        <h1>ESTO ES UN ARTICLE</h1>
+      </article>
+      <article>
+        <h1>ESTO ES UN ARTICLE</h1>
+      </article>
+      <article>
+        <h1>ESTO ES UN ARTICLE</h1>
+      </article>
+    </main>
+    <footer>
+      <article>
+        <a href="#" class="logo">
+          <p class="nombre-pagina">WebStudio</p>
+        </a>
+        <address>
+          <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+          <p style="color: rgba(255, 255, 255, 0.6);">+52 55 5529 6000</p>
+          <p style="color: rgba(255, 255, 255, 0.6);">info@example.com</p>
+        </address>
+      </article>
+    </footer>
   </body>
 </html>
